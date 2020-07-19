@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>mabinm Activity5</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <script src='script.js'></script>
+    </head>
+    <body>
+        <form>
+            <fieldset>
+                <legend>Weather Form</legend>
+                    <label>City,CountryCode OR Zipcode,CountryCode:</label> <br>
+                    <input type='text' id='city'>
+                    <input type='submit' id='city_submit'>
+            </fieldset>
+        </form>
+        <br>
+        <form>
+            <fieldset>
+                <legend>Submit to httpbin</legend>
+                <input type='text' id='bin_in'>
+                <input type='submit' id='bin_submit'>
+            </fieldset>
+        </form>
+        <p>The data received back from httpbin:<br>
+        <span id = 'bin_out'></span>
+        </p>
+    </body>
+</html>
