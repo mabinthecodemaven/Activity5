@@ -4,8 +4,7 @@
         <title>mabinm Activity5</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
-        <script src='script.js'></script>
+        
     </head>
     <body>
         <form>
@@ -16,6 +15,14 @@
                     <input type='submit' id='city_submit'>
             </fieldset>
         </form>
+        <div>
+            <h2>Current Weather</h2>
+            <ul>
+                <li><span>Temp:</span><span id='temp'></span></li>
+                <li><span>Humidity:</span><span id='humidity'></span></li>
+            </ul>
+
+        </div>
         <br>
         <form>
             <fieldset>
@@ -27,5 +34,7 @@
         <p>The data received back from httpbin:<br>
         <span id = 'bin_out'></span>
         </p>
+        <script src='script.js'></script>
     </body>
+    
 </html>
