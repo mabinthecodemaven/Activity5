@@ -20,8 +20,7 @@ function bindSubmits() {
         req.addEventListener('load', function() {
             if (req.status >= 200 && req.status < 400) {
                 var response = JSON.parse(req.responseText);
-                var temp = ' '+ Math.round((response.main.temp*(9/5)-459.4)/10)*10 + ' °F'
-                document.getElementById('temp').textContent = temp;
+                document.getElementById('temp').textContent = ' '+response.main.temp;
                 document.getElementById('humidity').textContent = ' '+response.main.humidity + '%';
                 console.log(response)
             } else {
